@@ -81,6 +81,6 @@ window.onload = () => {
 
     setNewHug().then(() => {
         document.querySelector(".label").innerHTML =
-            '(for tiryn)<br /><br /><span class="text label-small">reload for new hug</span>';
+            'cuddles for anyone, anytime, anyplace<br /><br /><span class="text label-small">reload for new hug</span>';
     });
 };
