@@ -1,0 +1,56 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Josefin Slab", serif;
+    font-size: 1.5em;
+}
+
+:root {
+    --copy-visibility: 0;
+    --copy-top: 30px;
+    --copy-transition: top;
+}
+
+.cuddle {
+    font-weight: normal;
+    font-size: calc((10vw + 10vh) / 2);
+    transition: .3s all;
+    position: relative;
+}
+
+.cuddle::before {
+    content: "copied!";
+    color: silver;
+    font-size: 0.2em;
+    display: block;
+    position: relative;
+    transition: .5s var(--copy-transition);
+    opacity: var(--copy-visibility);
+    top: var(--copy-top);
+}
+
+
+.cuddle:hover {
+    cursor: pointer;
+}
+
+.wrapper {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+}
+
+.text {
+    text-align: center;
+}
+
+.label-small {
+    font-size: 0.6em;
+}
