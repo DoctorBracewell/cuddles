@@ -28,7 +28,6 @@ function newHug() {
     return hugs[Math.floor(Math.random() * hugs.length)];
 }
 
-
 function copyToClipboard(str) {
     const el = document.createElement('textarea');
     el.value = str;
@@ -45,7 +44,9 @@ window.onload = () => {
     const cuddleText = document.querySelector(".cuddle");
 
     async function setNewHug() {
-        cuddleText.textContent = newHug();
+        const hug = newHug(); 
+        document.querySelector("title").innerHTML = hug;
+        cuddleText.textContent = hug;
     }
 
     let timeouts = [];
