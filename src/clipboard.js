@@ -1,7 +1,7 @@
 // Clipboard Copying
 const timeouts = [];
 
-cuddleText.addEventListener("click", () => {
+document.querySelector(".cuddle").addEventListener("click", () => {
   // Reset timeouts
   for (const timeout of timeouts) {
     clearTimeout(timeout);
