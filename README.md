@@ -1,5 +1,5 @@
 <div align="center">
-  <h1 align="center">Free Cuddles</h1>
+  <h1 align="center">Cuddles</h1>
   <p>
     <img alt="Github license" src="https://img.shields.io/github/license/DoctorBracewell/cuddles?style=for-the-badge">
     <img alt="Github release" src="https://img.shields.io/github/v/release/DoctorBracewell/cuddles?style=for-the-badge" />
